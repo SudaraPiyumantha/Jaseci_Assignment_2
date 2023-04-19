@@ -19,6 +19,8 @@ node person {
     has age;
     has days_to_birthday;
 
+    has minor;
+
     can get_age {
         today_date = date.date_now();
         difference = date.date_day_diff(start_date=date_of_birth, end_date=today_date);
@@ -36,10 +38,23 @@ node person {
         if (difference < 0) : difference = difference + 365;
         days_to_birthday = difference;
     }
+
+    can get_minors{
+        today_date = date.date_now();
+        difference = date.date_day_diff(start_date=date_of_birth, end_date=today_date);
+        age = difference / 365;
+        
+        if (age<18){
+            minor = "true";
+        }else{
+            minor = "false";
+        }
+    }
 }
 node family_root {
     has id;
     has family_name;
+    has minors;
 }
 
 // Graphs

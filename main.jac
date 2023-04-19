@@ -76,3 +76,31 @@ walker find_coming_birthday {
         report birthday_order;
     }
 }
+
+walker Show_minors{
+    has anchor minors_list = [];
+
+    root: take-->node::family_root;
+    family_root: take-->node::person;
+    person {
+        here::get_minors;
+        if here.minor == "true" {
+            minors_list.l::append([here.name, here.family_id, here.id, here.age ]);
+            }
+    }
+    
+    person: take-->node::family_root;
+    family_root{
+        for minor1 in minors_list{
+            if minor1[1]==here.id{
+                here.minors = (here.minors + "," + minor1[2]);
+            }
+        }
+
+    }
+    with exit {
+        std.out(minors_list);
+        report minors_list;
+    }
+
+}

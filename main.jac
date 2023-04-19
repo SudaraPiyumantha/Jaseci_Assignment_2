@@ -77,8 +77,9 @@ walker find_coming_birthday {
     }
 }
 
+//Walker to show whether the person, a minor or not and report the minors in the family.
 walker Show_minors{
-    has anchor minors_list = [];
+    has anchor minors_list = [["sudara","second"],["piyumantha"]];
 
     root: take-->node::family_root;
     family_root: take-->node::person;
@@ -88,16 +89,26 @@ walker Show_minors{
             minors_list.l::append([here.name, here.family_id, here.id, here.age ]);
             }
     }
-    
     person: take-->node::family_root;
     family_root{
-        for minor1 in minors_list{
-            if minor1[1]==here.id{
-                here.minors = (here.minors + "," + minor1[2]);
+        if here.id == "0x1"{
+            here.minors = here.minors + "testing ox1";
+        }elif here.id == "0x2"{
+            for minor1 in minors_list{
+                here.minors = minor1;
             }
         }
-
     }
+
+    // person: take-->node::family_root;
+    // family_root{
+    //     for minor1 in minors_list{
+    //         if minor1[1]==here.id{
+    //             here.minors = (here.minors + " " + minor1[2]);
+    //         }
+    //     }
+    // }
+    
     with exit {
         std.out(minors_list);
         report minors_list;

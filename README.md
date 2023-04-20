@@ -23,4 +23,4 @@ If any of the members has deceased, it displays the life span of the deceased me
 
 ### Walker: find_unemployed_members
 ####  - Created by T.H.P.Silva
-This walker identified the unemployed memebrs in the family and display their names, age and geneder
+This walker identified the unemployed memebrs in the family and display their names, age and geneder.

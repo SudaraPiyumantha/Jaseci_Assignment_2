@@ -9,7 +9,9 @@ Our task is to add a new feature to the ancestry example that is discussed durin
 - P.A.H.K. Wijesena     - 180705P
 
 ## Updates in Family Tree
-Add a new member to the irugalbandara family - "harsha Irugalbandara"  (by T.H.P.Silva)
+- Add a new member to the irugalbandara family - "harsha Irugalbandara"  (by T.H.P.Silva)
+- Add a new family root called "Rathnayaka" to the familytree.json.
+
 
 ## Added Walkers
 ### Walker: find_minors

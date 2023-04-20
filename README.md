@@ -16,4 +16,4 @@ Then, display "true" or "false" under each person node.
 
 ## Edited walker- "find-coming-birthday"
 ####  - Created by W.M.R.N Wijethunga
-if any of the members has deceased, it displays the life span of the deceased member by using the difference between the date of birth and the date of death.
+If any of the members has deceased, it displays the life span of the deceased member by using the difference between the date of birth and the date of death.

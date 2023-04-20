@@ -47,7 +47,7 @@
             "family_id": "0x2",
             "name": "Damayanthi Manike",
             "date_of_birth": "1966-02-10",
-            "profession": "Housewife",
+            "profession": null,
             "parents": null,
             "deceased": false,
             "children": [

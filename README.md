@@ -22,10 +22,12 @@ Also, it reports the minors in all family roots as an array of the format, [name
 ####  - Created by T.H.P.Silva
 This walker identified the unemployed memebrs in the family and display their names, age and geneder.
 
+### Walker: add_minors_to_family_tree & show_minors
+####  - Created by D.H.N.R.Weerasekara
+This walker find minors belonging to each family root and display it under the corresponding family_root.
+
 ## Edited walker- "find-coming-birthday"
 ####  - Created by W.M.R.N Wijethunga
 If any of the members has deceased, it displays the life span of the deceased member by using the difference between the date of birth and the date of death.
 
-### Walker: add_minors_to_family_tree & show_minors
-####  - Created by D.H.N.R.Weerasekara
-This walker find minors belonging to each family root and display it under the corresponding family_root.
+

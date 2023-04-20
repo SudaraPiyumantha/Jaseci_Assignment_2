@@ -9,7 +9,7 @@ Our task is to add a new feature to the ancestry example that is discussed durin
 - P.A.H.K. Wijesena     - 180705P
 
 ## updates in the familytree
-Add a new member to irugalbandara family - "harsha Irugalbandara" (by T.H.P.Silva)
+Add a new member to irugalbandara family - "harsha Irugalbandara"  (by T.H.P.Silva)
 
 ## Added Walkers
 ### Walker: find_minors
@@ -18,4 +18,4 @@ This walker determines the age of the each person and check whether the person, 
 Then, display "true" or "false" under each person node.
 ### Walker: find_unemployed_members.
 ####  - Created by T.H.P.Silva
-This walker identified the unemployed members in the family and display their name,geneder and age.
+This walker identified the unemployed members in the family and display their name, geneder and age.

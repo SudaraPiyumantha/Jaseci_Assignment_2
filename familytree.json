@@ -7,6 +7,10 @@
         {
             "family_name": "Jayalath",
             "uid": "0x2"
+        },
+        {
+            "family_name": "Rathnayake",
+            "uid": "0x3"
         }
     ],
     "members": [
@@ -23,7 +27,8 @@
             "deceased": false,
             "children": [],
             "spouse": null,
-            "gender": "Male"
+            "gender": "Male",
+            "date_of_death" :null
         },
         {
             "uid": "0x2",
@@ -35,13 +40,15 @@
             "deceased": true,
             "children": [
                 "0x1",
-                "ox4",
+                "0x4",
                 "0x5",
                 "0x6"
             ],
             "spouse": "0x3",
-            "gender": "Male"
+            "gender": "Male",
+            "date_of_death" :"2022-03-20"
         },
+        
         {
             "uid": "0x3",
             "family_id": "0x2",
@@ -57,8 +64,10 @@
                 "0x6"
             ],
             "spouse": "0x2",
-            "gender": "Female"
+            "gender": "Female",
+            "date_of_death" :null
         },
+        
         {
             "uid": "0x4",
             "family_id": "0x1",
@@ -72,8 +81,10 @@
             "deceased": false,
             "children": [],
             "spouse": null,
-            "gender": "Female"
+            "gender": "Female",
+            "date_of_death" :null
         },
+        
         {
             "uid": "0x5",
             "family_id": "0x1",
@@ -87,8 +98,10 @@
             "deceased": false,
             "children": [],
             "spouse": null,
-            "gender": "Male"
+            "gender": "Male",
+            "date_of_death" :null
         },
+        
         {
             "uid": "0x6",
             "family_id": "0x1",
@@ -102,7 +115,37 @@
             "deceased": false,
             "children":[],
             "spouse": null,
-            "gender": "Male"
+            "gender": "Male",
+            "date_of_death" :null
+        },
+        {
+            "uid": "0x7",
+            "family_id": "0x1",
+            "name": "Alwis Irugalbandara",
+            "date_of_birth": "1920-07-05",
+            "profession": "Farmer",
+            "parents": null,
+            "deceased": true,
+            "children": ["0x2"],
+            "spouse": "0x8",
+            "gender": "Male",
+            "date_of_death" : "2000-05-05"
+        },
+
+        {
+            "uid": "0x8",
+            "family_id": "0x3",
+            "name": "Mallika Rathnayake",
+            "date_of_birth": "1925-08-08",
+            "profession": "House Wife",
+            "parents": null,
+            "deceased": true,
+            "children": ["0x2"],
+            "spouse": "0x7",
+            "gender": "Female",
+            "date_of_death" : "2010-03-02"
         }
+
+        
     ]
 }

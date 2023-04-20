@@ -86,6 +86,21 @@
             "children": [],
             "spouse": null,
             "gender": "Male"
+        },
+        
+            "uid": "0x6",
+            "family_id": "0x1",
+            "name": "harsha Irugalbandara",
+            "date_of_birth": "1998-05-11",
+            "profession": null,
+            "parents": {
+                "father": "0x2",
+                "mother": "0x3"
+            },
+            "deceased": false,
+            "children":[],
+            "spouse": null,
+            "gender": "Male"
         }
     ]
 }

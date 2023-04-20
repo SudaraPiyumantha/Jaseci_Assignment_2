@@ -15,9 +15,11 @@ node person {
     has parents;
     has children;
     has spouse;
+    has date_of_death;
 
     has age;
     has days_to_birthday;
+    has lifespan;
 
     has minor;
 
@@ -50,6 +52,13 @@ node person {
             minor = "false";
         }
     }
+    
+    can get_lifespan{
+        difference = date.date_day_diff(start_date=date_of_birth, end_date=date_of_death);
+        lifespan = difference/365;
+
+    }
+    
 }
 node family_root {
     has id;

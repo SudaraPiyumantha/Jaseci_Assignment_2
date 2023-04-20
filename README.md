@@ -8,6 +8,9 @@ Our task is to add a new feature to the ancestry example that is discussed durin
 - T.H.P. Silva          - 180605J
 - P.A.H.K. Wijesena     - 180705P
 
+## updates in familytree.
+Add a new member to the irugalbandara family - "harsha Irugalbandara"  (by T.H.P.Silva)
+
 ## Added Walkers
 ### Walker: find_minors
 ####  - Created by M.H.S. Piyumantha
@@ -17,3 +20,8 @@ Then, display "true" or "false" under each person node.
 ## Edited walker- "find-coming-birthday"
 ####  - Created by W.M.R.N Wijethunga
 If any of the members has deceased, it displays the life span of the deceased member by using the difference between the date of birth and the date of death.
+
+## Added Walkers
+### Walker: find_unemployed_members
+####  - Created by T.H.P.Silva
+This walker identified the unemployed memebrs in the family and display their names, age and geneder

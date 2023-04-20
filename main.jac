@@ -36,7 +36,8 @@ walker create_familytree {
                 deceased = member["deceased"],
                 parents = member["parents"],
                 children = member["children"],
-                spouse = member["spouse"]
+                spouse = member["spouse"],
+                date_of_death = member["date_of_death"]
             );
             famly_members.list::append(family_member);
         }
@@ -68,6 +69,10 @@ walker find_coming_birthday {
             here::get_age;
             birthday_order.l::append([here.days_to_birthday, here.age, here.name]);
         }
+        else{
+            here::get_lifespan;
+        }
+        
     }
     with exit {
         birthday_order = std.sort_by_col(birthday_order, 0);

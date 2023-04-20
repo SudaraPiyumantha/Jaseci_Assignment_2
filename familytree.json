@@ -36,7 +36,8 @@
             "children": [
                 "0x1",
                 "ox4",
-                "0x5"
+                "0x5",
+                "0x6"
             ],
             "spouse": "0x3",
             "gender": "Male"
@@ -52,7 +53,8 @@
             "children": [
                 "0x1",
                 "0x4",
-                "0x5"
+                "0x5",
+                "0x6"
             ],
             "spouse": "0x2",
             "gender": "Female"

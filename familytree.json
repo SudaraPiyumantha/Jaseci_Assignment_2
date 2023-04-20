@@ -36,7 +36,10 @@
             "name": "Sujeewa Rathnakumara",
             "date_of_birth": "1966-02-10",
             "profession": "Mechanical Engineer",
-            "parents": null,
+            "parents": {
+                "father": "0x7",
+                "mother": "0x8"
+            },
             "deceased": true,
             "children": [
                 "0x1",

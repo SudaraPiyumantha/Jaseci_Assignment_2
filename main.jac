@@ -121,3 +121,24 @@ walker find_unemployed_members{
     }
 
 }
+//walker to add minors to each family_root node
+walker add_minors_to_family_tree {
+    has minors_list;
+    root: take-->node::family_root;
+    family_root {
+        here.minors = [];
+        for minor in minors_list{
+            if (minor[1]==here.id){
+                here.minors.l::append(minor[2]);
+            }
+        }
+    }
+}
+
+//walker to execute and show the minors in the family_root
+walker show_minors {
+    root {
+        minors_list = spawn here walker::find_minors;
+        spawn here walker::add_minors_to_family_tree(minors_list=minors_list);
+    }
+    }

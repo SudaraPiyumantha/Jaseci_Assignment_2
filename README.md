@@ -21,7 +21,6 @@ Then, display "true" or "false" under each person node.
 ####  - Created by W.M.R.N Wijethunga
 If any of the members has deceased, it displays the life span of the deceased member by using the difference between the date of birth and the date of death.
 
-## Added Walkers
 ### Walker: find_unemployed_members
 ####  - Created by T.H.P.Silva
 This walker identified the unemployed memebrs in the family and display their names, age and geneder

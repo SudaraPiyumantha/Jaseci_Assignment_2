@@ -100,27 +100,6 @@ walker find_minors{
     }
 }
 
-
-walker find_unemployed_members{
-    // return the unemployed members in the family
-    has anchor unemployed_members = [];
-    root: take-->node::family_root;
-
-    family_root: take-->node::person;
-    person {
-        if (!here.deceased) {
-            if (here.profession==null){
-                unemployed_members.l::append([here.name, here.gender, here.age]);
-            }    
-        }
-                
-    }
-    with exit {
-        std.out(unemployed_members);
-        report unemployed_members;
-    }
-
-}
 //walker to add minors to each family_root node
 walker add_minors_to_family_tree {
     has minors_list;
@@ -141,4 +120,24 @@ walker show_minors {
         minors_list = spawn here walker::find_minors;
         spawn here walker::add_minors_to_family_tree(minors_list=minors_list);
     }
+}
+
+walker find_unemployed_members{
+    // return the unemployed members in the family
+    has anchor unemployed_members = [];
+    root: take-->node::family_root;
+
+    family_root: take-->node::person;
+    person {
+        if (!here.deceased) {
+            if (here.profession==null){
+                unemployed_members.l::append([here.name, here.gender, here.age]);
+            }    
+        }
+                
     }
+    with exit {
+        std.out(unemployed_members);
+        report unemployed_members;
+    }
+}

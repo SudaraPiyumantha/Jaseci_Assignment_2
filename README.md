@@ -8,7 +8,7 @@ Our task is to add a new feature to the ancestry example that is discussed durin
 - T.H.P. Silva          - 180605J
 - P.A.H.K. Wijesena     - 180705P
 
-## updates in familytree.
+## Updates in Family Tree
 Add a new member to the irugalbandara family - "harsha Irugalbandara"  (by T.H.P.Silva)
 
 ## Added Walkers
@@ -16,11 +16,14 @@ Add a new member to the irugalbandara family - "harsha Irugalbandara"  (by T.H.P
 ####  - Created by M.H.S. Piyumantha
 This walker determines the age of the each person and check whether the person, a minor (age: 18-) or not. 
 Then, display "true" or "false" under each person node.
+Also, it reports the minors in all family roots as an array of the format, [name, family_id, id, age]
+
+### Walker: find_unemployed_members
+####  - Created by T.H.P.Silva
+This walker identified the unemployed memebrs in the family and display their names, age and geneder.
 
 ## Edited walker- "find-coming-birthday"
 ####  - Created by W.M.R.N Wijethunga
 If any of the members has deceased, it displays the life span of the deceased member by using the difference between the date of birth and the date of death.
 
-### Walker: find_unemployed_members
-####  - Created by T.H.P.Silva
-This walker identified the unemployed memebrs in the family and display their names, age and geneder.
+

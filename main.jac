@@ -90,7 +90,7 @@ walker find_minors{
     family_root: take-->node::person;
     person {
         here::get_minors;
-        if (here.minor) {
+        if (here.minor=="true") {
             minors_list.l::append([here.name, here.family_id, here.id, here.age ]);
         }
     }

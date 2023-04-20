@@ -63,7 +63,7 @@ node person {
 node family_root {
     has id;
     has family_name;
-    has minors = " ";
+    has minors;
 }
 
 // Graphs
